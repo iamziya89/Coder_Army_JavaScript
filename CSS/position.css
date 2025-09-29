@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#flag{
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    position: relative;
+}
+/* #circle{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+} */
+
+.circle1,.circle3{
+    height: 85px;
+    width: 85px;
+    background-color: rgb(56, 56, 233); 
+    border-radius: 0 10px 10px 0; 
+}
+.circle3{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.circle2,.circle4{
+    width: 170px;
+    height: 85px;
+    background-color: rgb(56, 56, 233);
+    position: absolute;
+    border-radius: 10px 0px 0px 10px;
+}
+.circle2{
+    top: 0;
+    right: 0;
+}
+.circle4{
+    bottom: 0;
+    right: 0;
+
+}
