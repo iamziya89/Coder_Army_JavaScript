@@ -145,40 +145,81 @@
 // }
 // fact(5)
 
-let arr = [];
-let max = 5;
+// let arr = [];
+// let max = 5;
 
-function push(val) {
-    if (arr.length >= max) {
-        return `Stack is already Full. You can't add the value ${val}`;
-    } else {
-        arr[arr.length] = val;
-        return arr;
+// function push(val) {
+//     if (arr.length >= max) {
+//         return `Stack is already Full. You can't add the value ${val}`;
+//     } else {
+//         arr[arr.length] = val;
+//         return arr;
+//     }
+// }
+
+// function pop() {
+//     if (arr.length === 0) {
+//         console.log(`Stack is already empty. You can't delete any value...`);
+//     } else {
+//         let removed = arr[arr.length - 1];
+//         arr.length = arr.length - 1;  // Remove last item
+//         console.log(`Popped value: ${removed}`);
+//         return arr;
+//     }
+// }
+
+// // Testing
+// console.log(push(10)); // [10]
+// console.log(push(20)); // [10, 20]
+// console.log(push(30)); // [10, 20, 30]
+// console.log(push(40)); // [10, 20, 30, 40]
+// console.log(push(50)); // [10, 20, 30, 40, 50]
+// console.log(push(60)); // Stack is already Full
+
+// pop(); // Popped value: 50
+// pop(); // Popped value: 40
+// console.log(arr); // [10, 20, 30]
+
+let arr=[];
+let max=6;
+// console.log(arr.length);
+
+function push(val){
+    if(arr.length>=max){
+        console.log(`Stack is Full. You can't add the value ${val} in stack`);
+    }
+    else{
+        arr[arr.length]=val;
+        console.log(arr);  
     }
 }
-
-function pop() {
-    if (arr.length === 0) {
-        console.log(`Stack is already empty. You can't delete any value...`);
-    } else {
-        let removed = arr[arr.length - 1];
-        arr.length = arr.length - 1;  // Remove last item
-        console.log(`Popped value: ${removed}`);
+push(10)
+push(20)
+push(30)
+push(40)
+push(50)
+push(60)
+function pop(){
+    if(arr.length>0){
+        arr.length=arr.length-1;
         return arr;
     }
+    else{
+        return `Stack is already Empty. you can't delete element from the array`
+    }
 }
+console.log(pop());
+console.log(pop());
+console.log(pop());
+console.log(pop());
+console.log(pop());
+console.log(pop());
+console.log(pop());
 
-// Testing
-console.log(push(10)); // [10]
-console.log(push(20)); // [10, 20]
-console.log(push(30)); // [10, 20, 30]
-console.log(push(40)); // [10, 20, 30, 40]
-console.log(push(50)); // [10, 20, 30, 40, 50]
-console.log(push(60)); // Stack is already Full
 
-pop(); // Popped value: 50
-pop(); // Popped value: 40
-console.log(arr); // [10, 20, 30]
+
+
+
 
 
 
