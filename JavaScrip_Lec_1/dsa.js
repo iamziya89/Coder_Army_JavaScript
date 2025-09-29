@@ -180,32 +180,66 @@
 // pop(); // Popped value: 40
 // console.log(arr); // [10, 20, 30]
 
-let arr=[];
-let max=6;
-// console.log(arr.length);
+// let arr=[];
+// let max=6;
+// // console.log(arr.length);
 
+// function push(val){
+//     if(arr.length>=max){
+//         console.log(`Stack is Full. You can't add the value ${val} in stack`);
+//     }
+//     else{
+//         arr[arr.length]=val;
+//         console.log(arr);  
+//     }
+// }
+// push(10)
+// push(20)
+// push(30)
+// push(40)
+// push(50)
+// push(60)
+// function pop(){
+//     if(arr.length>0){
+//         arr.length=arr.length-1;
+//         return arr;
+//     }
+//     else{
+//         return `Stack is already Empty. you can't delete element from the array`
+//     }
+// }
+// console.log(pop());
+// console.log(pop());
+// console.log(pop());
+// console.log(pop());
+// console.log(pop());
+// console.log(pop());
+// console.log(pop());
+
+let arr=[];
+let max=5;
 function push(val){
     if(arr.length>=max){
-        console.log(`Stack is Full. You can't add the value ${val} in stack`);
+        return `The stack is already full, ypu can't add the ${val} in the array`
     }
     else{
         arr[arr.length]=val;
-        console.log(arr);  
-    }
-}
-push(10)
-push(20)
-push(30)
-push(40)
-push(50)
-push(60)
-function pop(){
-    if(arr.length>0){
-        arr.length=arr.length-1;
         return arr;
     }
+}
+console.log(push(10));
+console.log(push(20));
+console.log(push(30));
+console.log(push(40));
+console.log(push(50));
+console.log(push(60));
+function pop(){
+    if(arr.length<=0){
+        return  `Array is empty, You can't delete the value from array`
+    }
     else{
-        return `Stack is already Empty. you can't delete element from the array`
+        arr.length-=1
+        return arr
     }
 }
 console.log(pop());
@@ -213,8 +247,23 @@ console.log(pop());
 console.log(pop());
 console.log(pop());
 console.log(pop());
-console.log(pop());
-console.log(pop());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
