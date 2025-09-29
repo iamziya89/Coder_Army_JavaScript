@@ -1,0 +1,26 @@
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    color: white;
+}
+.first{
+    background-color: aqua;
+    flex-grow: 1;
+}
+.second{
+    background-color: red;
+}
+.third{
+    background-color: brown;
+    flex-grow: 2;
+}
+.fourth{
+    background-color: blueviolet;
+}
