@@ -21,10 +21,53 @@
 // console.log(now);
 // console.log(now.toLocaleString());
 
-const dates=Date.now();
-const now=new Date(1759405963385)
+// const dates=Date.now();
+// const now=new Date(1759405963385)
 
-console.log(now);
+// console.log(now);
+
+var arr=[1,2,3,4,5]
+for(let i=0; i<arr.length/2 ; i++){
+    let temp=arr[i]
+    arr[i]=arr[arr.length-1-i]
+    arr[arr.length-1-i]=temp
+}
+console.log(arr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

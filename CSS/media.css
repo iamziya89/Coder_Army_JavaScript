@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.container{
+    padding: 20px;
+    position: relative;
+}
+.box{
+    height: 100px;
+    width: 150px;
+    background-color: orange;
+    animation-name: moving;
+    animation-duration: 5s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes moving{
+    from{
+        background-color: orange;
+        top: 15px;
+        left: 20px;
+    }
+    to{
+        background-color: blue;
+        top: 15px;
+        right: 800px;
+    }
+}
