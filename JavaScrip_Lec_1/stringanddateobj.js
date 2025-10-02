@@ -26,13 +26,53 @@
 
 // console.log(now);
 
-var arr=[1,2,3,4,5]
-for(let i=0; i<arr.length/2 ; i++){
-    let temp=arr[i]
-    arr[i]=arr[arr.length-1-i]
-    arr[arr.length-1-i]=temp
-}
-console.log(arr);
+// var arr=[1,2,3,4,5]
+// for(let i=0; i<arr.length/2 ; i++){
+//     let temp=arr[i]
+//     arr[i]=arr[arr.length-1-i]
+//     arr[arr.length-1-i]=temp
+// }
+// console.log(arr);
+
+// let str="JAVASCRIPT";
+// for(let i of str){
+//     console.log(i); 
+// }
+
+// let obj={
+//     name:"Mohd",
+//     age:25,
+//     address:"Sitkahan Tanda Ambedkar Nagar UP - 224190"
+// }
+// for(let key in obj){
+//     console.log(key);
+// }
+
+
+// let arr=[11,21,31,41,51]
+// arr.forEach((val)=>{
+//     console.log(val);
+    
+// })
+
+// let arr=[11,21,31,41,51]
+// console.log(arr.indexOf(31));
+// console.log(arr.includes(31));
+
+let arr1=[11,12,13,14,15]
+let arr2=[21,22,23,24,25]
+// console.log(arr1.concat(arr2));
+let arr3=[...arr1,...arr2]
+console.log(arr3.length);
+
+
+
+
+
+
+
+
+
 
 
 
