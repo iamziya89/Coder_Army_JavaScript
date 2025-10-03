@@ -59,11 +59,57 @@
 // console.log(arr.indexOf(31));
 // console.log(arr.includes(31));
 
-let arr1=[11,12,13,14,15]
-let arr2=[21,22,23,24,25]
-// console.log(arr1.concat(arr2));
-let arr3=[...arr1,...arr2]
-console.log(arr3.length);
+// let arr1=[11,12,13,14,15]
+// let arr2=[21,22,23,24,25]
+// // console.log(arr1.concat(arr2));
+// let arr3=[...arr1,...arr2]
+// console.log(arr3.length);
+
+// let arr=[5,2,9,11,23,8]
+// for(let i=0; i<arr.length; i++){
+//     for(let j=0; j<arr.length; j++){
+//         if(arr[j]>arr[j+1]){
+//             let temp=arr[j];
+//             arr[j]=arr[j+1];
+//             arr[j+1]=temp;
+//         }
+//     }
+// }
+// console.log(arr);
+
+// let reverse=(str)=>{
+//     let rev=""
+//     for(let i=str.length-1; i>=0; i--){
+//         rev+=str[i]
+//     }
+//     return rev;
+// }
+// console.log(reverse("MOHD"));
+
+// let reverse=(str)=>{
+//     return str.split('').reverse().join('')
+// }
+// console.log(reverse("MOHAMMAD ZIYA SHAMEEM"));
+
+let marks=[100, 50, 70, 80]
+// console.log(marks);
+// console.log(marks.length);
+// console.log(typeof marks);
+marks.push("Ziya")
+marks.push(130);
+console.log(marks);
+marks.pop()
+marks.pop()
+marks.pop()
+console.log(marks);
+
+
+
+
+
+
+
+
 
 
 
