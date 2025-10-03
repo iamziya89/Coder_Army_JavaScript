@@ -105,8 +105,99 @@ let marks=[100, 50, 70, 80]
 // marks.unshift("Mohammad")
 // marks.unshift("Shameem")
 // console.log(marks);
-marks.shift()
-console.log(marks);
+// marks.shift()
+// console.log(marks);
+
+// let arr=[12,16,27,78,89]
+// let arr2=arr
+// arr2.push(141)
+// console.log(arr2);
+// console.log(arr);
+
+
+// const arr=[10,20,30,40,50]
+// arr=[12,15,19]
+// console.log(arr);
+
+// let arr=[10, 30, 50, 90, 11]
+// let arr3=arr.slice(2,4)
+// console.log(arr3);
+// console.log(arr.slice(2,4));
+
+
+// let arr=[10, 30, 50, 90, 11, 120, 231]
+// // let arr1=arr.splice(2,2)
+// // console.log(arr1);
+// // console.log(arr);
+// arr.splice(1,3,"ROHIT",true)
+// console.log(arr);
+// console.log(arr.splice(1,3,"ROHIT",true));
+
+// let arr1=[10,30,50,90,11]
+// let arr2=["Rohit", 111, true]
+// console.log(arr1.concat(arr2));
+// console.log([...arr2,...arr1]);
+
+// let n=["Alice", "Bob", "Charlie"]
+// console.log(typeof n.toString());
+// let str="MOHS"
+// console.log(str.split(''));
+
+// let str=["Alice", "Bob", "Chrlie", "Bob", "Mohd", "Bob","anas"]
+// // console.log(str.lastIndexOf("Bob"));
+// // console.log(str.includes("Bob"));
+// str.sort();
+// console.log(str);
+// let arr=["anas","Arbax"]
+// arr.sort()
+// console.log(arr);
+
+// let arr=[10, "Rohit", "Mohan", true]
+// arr.sort()
+// console.log(arr);
+
+// let a=[10,40,31,71,5,11]
+// a.sort((a,b)=>a-b)
+// a.reverse()
+// console.log(a);
+
+// let arr=[10,30,50,[40,90,11],80]
+// console.log(arr[3][1]);
+
+const arr=[10,30,50,[40,90,[60,19,99]],80]
+const a=arr.flat(Infinity)
+console.log(a);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
