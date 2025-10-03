@@ -95,13 +95,20 @@ let marks=[100, 50, 70, 80]
 // console.log(marks);
 // console.log(marks.length);
 // console.log(typeof marks);
-marks.push("Ziya")
-marks.push(130);
+// marks.push("Ziya")
+// marks.push(130);
+// console.log(marks);
+// marks.pop()
+// marks.pop()
+// marks.pop()
+// console.log(marks);
+// marks.unshift("Mohammad")
+// marks.unshift("Shameem")
+// console.log(marks);
+marks.shift()
 console.log(marks);
-marks.pop()
-marks.pop()
-marks.pop()
-console.log(marks);
+
+
 
 
 
