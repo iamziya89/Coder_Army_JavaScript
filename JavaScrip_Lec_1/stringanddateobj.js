@@ -164,9 +164,31 @@ let marks=[100, 50, 70, 80]
 // let arr=[10,30,50,[40,90,11],80]
 // console.log(arr[3][1]);
 
-const arr=[10,30,50,[40,90,[60,19,99]],80]
-const a=arr.flat(Infinity)
-console.log(a);
+// 
+
+// let arr = [];
+// let max = 6;
+
+// function push(value) {
+//     if (arr.length >= max) {
+//         console.log(`Stack is Full. You can't add the value ${value}`);
+//     } else {
+//         arr[arr.length] = value; // yahi length badha deta hai
+//         // arr.length=arr.length+1
+//         console.log(arr);
+//     }
+// }
+
+// push(20);
+// push(30);
+// push(40);
+// push(20);
+// push(30);
+// push(40);
+// push(40);
+// console.log(arr);
+
+
 
 
 
