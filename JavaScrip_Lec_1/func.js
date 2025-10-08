@@ -91,6 +91,24 @@
 // const va=user.greet();
 // console.log(va);
 
+const user={
+    name : "ZIYA",
+    age : 25,
+    email : "iamziya53@gmail.com",
+    amount : 5000,
+    address : {
+        city : "Dwarka",
+        state : "Uttar Pradesh"
+    }
+}
+// console.log(user.address.city);
+const user2={...user};
+user.name="Sitkahan Tanda"
+console.log(user);
+console.log(user2);
+
+
+
 
 
 
