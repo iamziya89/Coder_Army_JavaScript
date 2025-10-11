@@ -43,17 +43,48 @@
 // console.log(arr3);
 
 
-let arr=[5,2,9,1,22,15,50,24]
-for(let i=0; i<arr.length; i++){
-    for(let j=0; j<arr.length; j++){
-        if(arr[j]>arr[j+1]){
-            let temp=arr[j]
-            arr[j]=arr[j+1]
-            arr[j+1]=temp;
+// let arr=[5,2,9,1,22,15,50,24]
+// for(let i=0; i<arr.length; i++){
+//     for(let j=0; j<arr.length; j++){
+//         if(arr[j]>arr[j+1]){
+//             let temp=arr[j]
+//             arr[j]=arr[j+1]
+//             arr[j+1]=temp;
+//         }
+//     }
+// }
+// console.log(arr);
+
+
+// let revStr=(str)=>{
+//     let rev=""
+//     for(let i=str.length-1; i>=0; i--){
+//         rev+=str[i]
+//     }
+//     return rev;
+// }
+// console.log(revStr("EYESI"));
+
+function longestWord(sentence){
+    let long=""
+    let word=sentence.split(" ");
+    for(let i=0; i<word.length; i++){
+        if(word[i].length>long.length){
+            long=word[i];
         }
     }
+    return long;
 }
-console.log(arr);
+console.log(longestWord("I LOVE CODING IN JAVASCRIPTS ABCDEFGHIJKLMNOPQRS"));
+
+
+
+
+
+
+
+
+
 
 
 
