@@ -33,4 +33,44 @@
 //     }
 // }
 
+// let arr=[21,22,23,24,25,"MOHD"]
+// console.log(arr.indexOf(24));
+
+// console.log(arr.includes("MOHD"));
+// let arr1=[12,13]
+// let arr2=[15,16]
+// let arr3=[...arr1, ...arr2]
+// console.log(arr3);
+
+
+let arr=[5,2,9,1,22,15,50,24]
+for(let i=0; i<arr.length; i++){
+    for(let j=0; j<arr.length; j++){
+        if(arr[j]>arr[j+1]){
+            let temp=arr[j]
+            arr[j]=arr[j+1]
+            arr[j+1]=temp;
+        }
+    }
+}
+console.log(arr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
