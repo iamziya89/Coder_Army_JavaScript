@@ -65,17 +65,56 @@
 // }
 // console.log(revStr("EYESI"));
 
-function longestWord(sentence){
-    let long=""
-    let word=sentence.split(" ");
-    for(let i=0; i<word.length; i++){
-        if(word[i].length>long.length){
-            long=word[i];
-        }
-    }
-    return long;
-}
-console.log(longestWord("I LOVE CODING IN JAVASCRIPTS ABCDEFGHIJKLMNOPQRS"));
+// function longestWord(sentence){
+//     let long=""
+//     let word=sentence.split(" ");
+//     for(let i=0; i<word.length; i++){
+//         if(word[i].length>long.length){
+//             long=word[i];
+//         }
+//     }
+//     return long;
+// }
+// console.log(longestWord("I LOVE CODING IN JAVASCRIPTS ABCDEFGHIJKLMNOPQRS"));
+
+// function pallindrome(str){
+//     let rev=str.split('').reverse().join('');
+//     if(str===rev) return `${str} is PALLINDROME`
+//     else return `${str} is NOT A PALLINDROME`
+// }
+// console.log(pallindrome("EYEYEI"));
+
+// let arr=[12,14,25,28,45]
+// let pos=2
+// for(let i=arr.length-1; i>=0; i--){
+//     if(i>=pos){
+//         arr[i+1]=arr[i]
+//         if(i==pos){
+//             arr
+//         }
+//     }
+// }
+
+// console.log("Start");
+// const p1=fetch("https://api.github.com//users");
+// console.log(p1);
+// console.log("End");
+
+// call back hell
+
+console.log("First");
+console.log("Second");
+console.log("Last");
+
+
+
+
+
+
+
+
+
+
 
 
 
