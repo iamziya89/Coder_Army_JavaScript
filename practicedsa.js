@@ -102,9 +102,41 @@
 
 // call back hell
 
-console.log("First");
-console.log("Second");
-console.log("Last");
+// console.log("First");
+// console.log("Second");
+// let sum=0;
+// for(let i=0; i<3000000000; i++)
+//     sum+=i;
+// console.log(sum);
+// console.log("Last");
+
+console.log("FIRST");
+
+setTimeout(()=>{
+    console.log("Mohd Ziya 1");
+    
+},5000)
+setTimeout(()=>{
+    console.log("Mohd Ziya 2");
+},6000)
+
+console.log("END");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
