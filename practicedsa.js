@@ -132,46 +132,82 @@
 // },8000)
 // console.log("Last");
 
-function placedOrder(cb){
-    console.log("Payment is in Progress");
-    setTimeout(()=>{
-        console.log("Payment Received and Order get Placed");
-        cb();
-    },3000) 
-}
-function prepaingOrder(xy){
-    console.log("Food prepration Started");
-    setTimeout(()=>{
-        console.log("Food is now prepared");
-        // callback();
-        xy();
-    },3000)
-}
+// function placedOrder(cb){
+//     console.log("Payment is in Progress");
+//     setTimeout(()=>{
+//         console.log("Payment Received and Order get Placed");
+//         cb();
+//     },3000) 
+// }
+// function prepaingOrder(xy){
+//     console.log("Food prepration Started");
+//     setTimeout(()=>{
+//         console.log("Food is now prepared");
+//         // callback();
+//         xy();
+//     },3000)
+// }
 
-function pickupdelivery(cb){
-    console.log("Pickup is ready ");
-    setTimeout(()=>{
-        console.log("Pick up the status");
-        cb();
-    },3000)
-}
+// function pickupdelivery(cb){
+//     console.log("Pickup is ready ");
+//     setTimeout(()=>{
+//         console.log("Pick up the status");
+//         cb();
+//     },3000)
+// }
 
-function deliverOrder(){
-    console.log("Delivered Order ready");
-    setTimeout(()=>{
-        console.log("Ordered Delivered");
+// function deliverOrder(){
+//     console.log("Delivered Order ready");
+//     setTimeout(()=>{
+//         console.log("Ordered Delivered");
         
-    },3000)
+//     },3000)
     
-}
-placedOrder(()=>{
-    prepaingOrder(()=>{
-        pickupdelivery(()=>{
-           deliverOrder(); 
-        });
-    });
-});
-// ();
+// }
+// placedOrder(()=>{
+//     prepaingOrder(()=>{
+//         pickupdelivery(()=>{
+//            deliverOrder(); 
+//         });
+//     });
+// });
+// // ();
+
+
+console.log("START");
+
+// const p1=fetch('https://api.github.com/users');
+// // console.log(p1);
+// const p2=p1.then((res)=>{
+//     return res.json();
+// })
+
+// p2.then((resp)=>{
+//     console.log(resp);
+// })
+
+fetch('https://api.github.com/users').then((res)=>{
+    return res.json();
+}).then((data)=>{
+    console.log(data);
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
