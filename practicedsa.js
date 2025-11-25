@@ -110,17 +110,97 @@
 // console.log(sum);
 // console.log("Last");
 
-console.log("FIRST");
+// console.log("FIRST");
 
-setTimeout(()=>{
-    console.log("Mohd Ziya 1");
+// setTimeout(()=>{
+//     console.log("Mohd Ziya 1");
     
-},5000)
-setTimeout(()=>{
-    console.log("Mohd Ziya 2");
-},6000)
+// },5000)
+// setTimeout(()=>{
+//     console.log("Mohd Ziya 2");
+// },6000)
 
-console.log("END");
+// console.log("END");
+
+// console.log("First");
+// setTimeout(()=>{
+//     console.log("Executed 1");
+    
+// },5000);
+// setTimeout(()=>{
+//     console.log("Executed 2");
+// },8000)
+// console.log("Last");
+
+function placedOrder(cb){
+    console.log("Payment is in Progress");
+    setTimeout(()=>{
+        console.log("Payment Received and Order get Placed");
+        cb();
+    },3000) 
+}
+function prepaingOrder(xy){
+    console.log("Food prepration Started");
+    setTimeout(()=>{
+        console.log("Food is now prepared");
+        // callback();
+        xy();
+    },3000)
+}
+
+function pickupdelivery(cb){
+    console.log("Pickup is ready ");
+    setTimeout(()=>{
+        console.log("Pick up the status");
+        cb();
+    },3000)
+}
+
+function deliverOrder(){
+    console.log("Delivered Order ready");
+    setTimeout(()=>{
+        console.log("Ordered Delivered");
+        
+    },3000)
+    
+}
+placedOrder(()=>{
+    prepaingOrder(()=>{
+        pickupdelivery(()=>{
+           deliverOrder(); 
+        });
+    });
+});
+// ();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
