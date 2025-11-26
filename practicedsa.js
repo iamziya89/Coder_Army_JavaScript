@@ -174,7 +174,7 @@
 // // ();
 
 
-console.log("START");
+// console.log("START");
 
 // const p1=fetch('https://api.github.com/users');
 // // console.log(p1);
@@ -200,6 +200,53 @@ console.log("START");
 // }
 // let jsonFormat=JSON.stringify(j1);
 // console.log(jsonFormat);
+
+// console.log("FIRST");
+// const p1=fetch('https://api.github.com//users')
+// const p2=p1.then((res)=>{
+//     return res.json();
+// })
+// p2.then((res)=>{
+//     console.log(res);
+// })
+// // console.log(p1);
+// console.log("END");
+
+// fetch("https://api.github.com/users").then((response)=>{
+//     return response.json();
+// }).then((data)=>{
+//     console.log(data);
+// })
+
+// console.log("Starting Phase");
+// const p1=fetch("https://api.github.com/users");
+// const p2=p1.then((response)=>{
+//     return response.json();
+// })
+// p2.then((data)=>{
+//     console.log(data);
+    
+// })
+// console.log("Ending Phase");
+
+// fetch("https://api.github.com/users").then((res)=>{return res.json()}).then((data)=>{console.log(data)})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
