@@ -231,6 +231,18 @@
 
 // fetch("https://api.github.com/users").then((res)=>{return res.json()}).then((data)=>{console.log(data)})
 
+const obj={
+    name : "Mohd",
+    lname: "Ziya",
+    age  : 30,
+    Address:"Sitkahan",
+}
+console.log(obj);
+const jsonformat=JSON.stringify(obj)
+console.log(jsonformat);
+
+
+
 
 
 
