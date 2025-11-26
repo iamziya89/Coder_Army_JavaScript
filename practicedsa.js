@@ -186,12 +186,49 @@ console.log("START");
 //     console.log(resp);
 // })
 
-fetch('https://api.github.com/users').then((res)=>{
-    return res.json();
-}).then((data)=>{
-    console.log(data);
+// fetch('https://api.github.com/users').then((res)=>{
+//     return res.json();
+// }).then((data)=>{
+//     console.log(data);
     
-})
+// })
+
+// const j1={
+//     name : "Mohd",
+//     age : 25,
+//     Address : "Sitkahan, Tanda"
+// }
+// let jsonFormat=JSON.stringify(j1);
+// console.log(jsonFormat);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
