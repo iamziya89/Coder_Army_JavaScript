@@ -274,34 +274,79 @@
 // })
 // console.log("Ending the process");
 
-function payment(cb){
-    console.log("Payment is in Progress....");
-    setTimeout(()=>{
-        console.log("Payment received and order is ready to placed..");
-        cb();
-    },3000)
-}
+// function payment(cb){
+//     console.log("Payment is in Progress....");
+//     setTimeout(()=>{
+//         console.log("Payment received and order is ready to placed..");
+//         cb();
+//     },3000)
+// }
 
-function pickupOrder(xy){
-    console.log("Pickup Order");
-    setTimeout(()=>{
-        console.log("Pickup the order and served");
-        xy();
-    },3000)
-}
+// function pickupOrder(xy){
+//     console.log("Pickup Order");
+//     setTimeout(()=>{
+//         console.log("Pickup the order and served");
+//         xy();
+//     },3000)
+// }
 
-function deliver(){
-    console.log("Delivered Food....");
-    setTimeout(()=>{
-        console.log("I have Delivered the food");
+// function deliver(){
+//     console.log("Delivered Food....");
+//     setTimeout(()=>{
+//         console.log("I have Delivered the food");
         
-    },3000)
+//     },3000)
+// }
+// payment(()=>{
+//     pickupOrder(()=>{
+//         deliver();
+//     });
+// });
+
+
+// console.log("START");
+// const p=fetch("https://api.github.com/users")
+// const p1 =p.then((res)=>{
+//     return res.json();
+// })
+// p1.then((data)=>{
+//     console.log(data);
+    
+// })
+
+// console.log("END");
+
+console.log("Start");
+
+async function greet(){
+    return new Promise((resolve, reject) => {
+        reject("Mohd Ziya Shameem Error")
+    })
 }
-payment(()=>{
-    pickupOrder(()=>{
-        deliver();
-    });
-});
+const res=greet();
+res.then((response)=>{
+    console.log(response);
+    
+}).catch((err)=>{
+    console.log(err);
+    
+}).finally(()=>{
+    console.log("ALWAYS RUN");
+    
+})
+console.log("ENDING......");
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
