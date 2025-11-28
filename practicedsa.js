@@ -255,6 +255,26 @@
 // const func=greet();
 // func.then((data)=>console.log(data));
 
+console.log("Start The Function");
+// let sum=0
+// for(let i=0; i<3000000000; i++){
+//     sum+=i
+// }
+// console.log(sum);
+
+setTimeout(()=>{
+    console.log("Time Out Executed");
+    
+},3000)
+const p1=new Promise((res, rej)=>{
+    res("Promise")
+})
+p1.then((res)=>{
+    console.log(res);
+})
+console.log("Ending the process");
+
+
 
 
 
