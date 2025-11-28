@@ -255,24 +255,66 @@
 // const func=greet();
 // func.then((data)=>console.log(data));
 
-console.log("Start The Function");
+// console.log("Start The Function");
 // let sum=0
 // for(let i=0; i<3000000000; i++){
 //     sum+=i
 // }
 // console.log(sum);
 
-setTimeout(()=>{
-    console.log("Time Out Executed");
+// setTimeout(()=>{
+//     console.log("Time Out Executed");
     
-},3000)
-const p1=new Promise((res, rej)=>{
-    res("Promise")
-})
-p1.then((res)=>{
-    console.log(res);
-})
-console.log("Ending the process");
+// },3000)
+// const p1=new Promise((res, rej)=>{
+//     res("Promise")
+// })
+// p1.then((res)=>{
+//     console.log(res);
+// })
+// console.log("Ending the process");
+
+function payment(cb){
+    console.log("Payment is in Progress....");
+    setTimeout(()=>{
+        console.log("Payment received and order is ready to placed..");
+        cb();
+    },3000)
+}
+
+function pickupOrder(xy){
+    console.log("Pickup Order");
+    setTimeout(()=>{
+        console.log("Pickup the order and served");
+        xy();
+    },3000)
+}
+
+function deliver(){
+    console.log("Delivered Food....");
+    setTimeout(()=>{
+        console.log("I have Delivered the food");
+        
+    },3000)
+}
+payment(()=>{
+    pickupOrder(()=>{
+        deliver();
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
