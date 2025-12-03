@@ -316,25 +316,48 @@
 
 // console.log("END");
 
-console.log("Start");
+// console.log("Start");
+
+// async function greet(){
+//     return new Promise((resolve, reject) => {
+//         reject("Mohd Ziya Shameem Error")
+//     })
+// }
+// const res=greet();
+// res.then((response)=>{
+//     console.log(response);
+    
+// }).catch((err)=>{
+//     console.log(err);
+    
+// }).finally(()=>{
+//     console.log("ALWAYS RUN");
+    
+// })
+// console.log("ENDING......");
+
+
 
 async function greet(){
-    return new Promise((resolve, reject) => {
-        reject("Mohd Ziya Shameem Error")
+    return new Promise((res, rej)=>{
+        // res("Mohammad Ziya")
+        rej("Error")
     })
 }
-const res=greet();
-res.then((response)=>{
-    console.log(response);
-    
-}).catch((err)=>{
-    console.log(err);
-    
-}).finally(()=>{
-    console.log("ALWAYS RUN");
-    
-})
-console.log("ENDING......");
+let response=greet();
+response.then((data)=>console.log(data)).catch((err)=>console.log(err));
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
