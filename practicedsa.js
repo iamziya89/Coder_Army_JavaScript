@@ -338,14 +338,57 @@
 
 
 
-async function greet(){
-    return new Promise((res, rej)=>{
-        // res("Mohammad Ziya")
-        rej("Error")
-    })
-}
-let response=greet();
-response.then((data)=>console.log(data)).catch((err)=>console.log(err));
+// async function greet(){
+//     return new Promise((res, rej)=>{
+//         // res("Mohammad Ziya")
+//         rej("Error")
+//     })
+// }
+// let response=greet();
+// response.then((data)=>console.log(data)).catch((err)=>console.log(err));
+
+
+// async function greet(){
+//     return new Promise((res,rej)=>{
+//         rej("Mohd IS IN PENDING STATES")
+//     })
+// }
+// const resp=greet();
+// resp.then((data)=>console.log(data)).catch((err)=>console.log("ERROR : ",err));
+// console.log("Hellow First");
+
+// const resp= fetch("https://api.github.com/users")
+// const data=resp.json();
+// console.log(data);
+
+
+// console.log("LAST");
+
+fetch("https://api.github.com/users").then((resp)=>resp.json()).then((data)=>console.log(data));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
