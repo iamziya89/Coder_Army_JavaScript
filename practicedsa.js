@@ -364,7 +364,7 @@
 
 // console.log("LAST");
 
-fetch("https://api.github.com/users").then((resp)=>resp.json()).then((data)=>console.log(data));
+// fetch("https://api.github.com/users").then((resp)=>resp.json()).then((data)=>console.log(data));
 
 
 
