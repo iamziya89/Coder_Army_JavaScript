@@ -371,6 +371,40 @@
 
 
 
+// let n=10;
+// for(let i=1; i<=n; i++){
+//     console.log(i);  
+// }
+
+// let num=parseInt(prompt("Enter number that you want to print on console...."))
+// // console.log(num);
+// // console.log(typeof num);
+// while(num>=1){
+//     console.log(num);
+//     num--; 
+// }
+// let input=document.getElementById("num");
+// // console.log(input);
+
+// let btn=document.getElementById("btn");
+// let shownum=document.getElementById("shownum");
+// // console.log(btn);
+// let input_val=parseInt(input.value);
+//    for(let i=1; i<=input_val; i++){
+//     shownum.innerText=`${i},`
+//    }
+// btn.addEventListener("click",()=>{
+   
+// })
+
+
+
+
+let num=20;
+for(let i=1; i<=num; i++){
+    console.log(num-i+1);
+}
+
 
 
 

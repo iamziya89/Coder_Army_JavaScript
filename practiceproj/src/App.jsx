@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 // import './App.css'
+import Counter from './Counter'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
       <h1>Function Calling.......</h1>
       <button onClick={xyz}>Click Me</button> <br /> <br />
       <button onClick={()=>fruit("Banana")}>Click Me</button>
+      <Counter />
     </>
   )
 }
