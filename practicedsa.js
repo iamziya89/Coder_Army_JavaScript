@@ -466,6 +466,28 @@
 // console.log(myInc());
 
 
+// function outer() {
+//   let c = {}; // cache object
+
+//   return function (n) {
+//     if (n in c) {
+//       console.log("Return From Cache.......");
+//       return c[n];
+//     }
+
+//     console.log("Calculating......");
+//     c[n] = n * n;
+//     return c[n];
+//   };
+// }
+
+// const myInc = outer();
+
+// console.log(myInc(2)); // Calculating...... → 4
+// console.log(myInc(2)); // Return From Cache....... → 4
+// console.log(myInc(2)); // Return From Cache....... → 4
+
+
 
 
 
