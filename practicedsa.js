@@ -400,10 +400,91 @@
 
 
 
-let num=20;
-for(let i=1; i<=num; i++){
-    console.log(num-i+1);
-}
+// let num=50;
+// for(let i=0; i<=50; i++){
+//   if(i%2==0){
+//     console.log(`Enven:${i}`)
+//   }
+//   else{
+//     console.log(`Odd:${i}`)
+//   }
+// }
+
+// let num=10;
+// let sum=0;
+// for(let i=1; i<=num; i++){
+//     sum+=i;
+// }
+// console.log(sum)
+
+
+// let num=3;
+// let fact=1;
+// for(let i=1; i<=num; i++){
+//     if(num==0){
+//         console.log(`factorial of ${num} will be 1`)
+//     }else{
+//         fact=fact*i;
+//     }
+// }
+// console.log(fact)
+
+// for(let i=1; i<=5; i++){
+//     let str=" ";
+//     for(let j=1; j<=i; j++){
+//         str+="*"
+//     }
+//     console.log(str);
+    
+// }
+
+
+
+
+
+// for(let i=1; i<=5; i++){
+//     let str=" ";
+//     for(let j=5; j>=i; j--){
+//         str+="*"
+//     }
+//     console.log(str);
+    
+// }
+
+
+
+// function increment(){
+//     let count=0
+//     return function(){
+//         count++;
+//         return count;
+//     }
+// }
+// const myInc=increment();
+// console.log(myInc());
+// console.log(myInc());
+// console.log(myInc());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
