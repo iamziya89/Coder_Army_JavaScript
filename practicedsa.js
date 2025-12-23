@@ -506,6 +506,45 @@
 //     console.log(even);
 //     console.log(odd);
 
+// function outerFun(){
+//     let count=0;
+//     return function(){
+//         count++;
+//         return count;
+//     }
+// }
+// let closureproperty=outerFun();
+// console.log(closureproperty());
+// console.log(closureproperty());
+// console.log(closureproperty());
+
+
+// function memoizeSquare(){
+//     let cache={};
+//     return function(n){
+//         if(n in cache){
+//             console.log("Return From Cache.......");
+//             return cache[n];
+//         }
+//         console.log("Calculating....");
+//         cache[n]=n*n;
+//         return cache[n];
+//     }
+// }
+// const calculateSquare=memoizeSquare();
+// console.log(calculateSquare(5));
+// console.log(calculateSquare(5));
+// console.log(calculateSquare(5));
+// console.log(calculateSquare(5));
+
+
+
+
+
+
+
+
+
 
 
 
