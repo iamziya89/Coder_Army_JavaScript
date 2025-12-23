@@ -488,6 +488,24 @@
 // console.log(myInc(2)); // Return From Cache....... → 4
 
 
+// 
+
+
+// let arr=[11,12,13,14,211,16]
+// let even=[]
+// let odd=[]
+// for(let x of arr){
+//     if(x%2==0){
+//         even.push(x)
+//     }
+//     else{
+//         odd.push(x)
+//     }
+    
+// }
+//     console.log(even);
+//     console.log(odd);
+
 
 
 
