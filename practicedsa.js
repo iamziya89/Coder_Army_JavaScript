@@ -538,6 +538,64 @@
 // console.log(calculateSquare(5));
 
 
+// let num=10;
+// for(let i=1; i<=10; i++){
+//     console.log(i);
+    
+// }
+
+// function calculateMax(a, b, c){
+//     let max;
+//     if(a>=b && a>=c){
+//         return a
+//     }
+//     else if(b>=a && b>=c){
+//         return b
+//     }
+//     else{
+//         return c
+//     }
+// }
+// console.log(calculateMax(20, 30, 31));
+
+
+// function calculateBill(units){
+//     let Total;
+//     if(units<100){
+//         Total=100*5
+//     }
+//     else if(units<200){
+//         Total=100*5+(units-100)*7;
+//     }
+//     else if(units<300){
+//         Total=100*5+100*7+(units-200)*10;
+//     }
+//     else{
+//         Total=100*5+100*7+100*10+(units-300)*12;
+//     }
+//     return Total;
+// }
+// console.log(calculateBill(230));
+
+
+function digitToNumber(digit){
+    let l=digit.length;
+    let num=digit[l-1]*10**(l-1)+digit[l-2]*10**(l-2)+digit[l-3]*10**(l-3)+digit[l-4]*10**(l-4)
+    console.log(num);
+    
+    
+}
+digitToNumber([2,4,5,6])
+
+
+
+
+
+
+
+
+
+
 
 
 
