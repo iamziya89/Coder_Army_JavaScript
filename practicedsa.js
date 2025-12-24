@@ -578,14 +578,33 @@
 // console.log(calculateBill(230));
 
 
-function digitToNumber(digit){
-    let l=digit.length;
-    let num=digit[l-1]*10**(l-1)+digit[l-2]*10**(l-2)+digit[l-3]*10**(l-3)+digit[l-4]*10**(l-4)
-    console.log(num);
-    
-    
+// function digitToNumber(digit){
+//     let l=digit.length;
+//     let num=digit[l-1]*10**(l-1)+digit[l-2]*10**(l-2)+digit[l-3]*10**(l-3)+digit[l-4]*10**(l-4)
+//     console.log(num);   
+// }
+// digitToNumber([2,4,5,6])
+
+function reverseNumber(n){
+    let rev=""
+    while(n>0){
+        let last=n%10;
+        rev+=last
+        n=n/10;
+    }
+    return rev;
 }
-digitToNumber([2,4,5,6])
+console.log(reverseNumber(1234));
+
+
+
+
+
+
+
+
+
+
 
 
 
