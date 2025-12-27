@@ -585,16 +585,96 @@
 // }
 // digitToNumber([2,4,5,6])
 
-function reverseNumber(n){
-    let rev=""
-    while(n>0){
-        let last=n%10;
-        rev+=last
-        n=n/10;
+// function reverseNumber(n){
+//     let rev=""
+//     while(n>0){
+//         let last=n%10;
+//         rev+=last
+//         n=n/10;
+//     }
+//     return rev;
+// }
+// console.log(reverseNumber(1234));
+
+
+// function curryingMultiplication(a){
+//     return function(b){
+//         return function (c){
+//             return function (d){
+//                 return a*b*c*d;
+//             }
+//         }
+//     }
+// }
+
+// console.log(curryingMultiplication(1)(2)(3)(4));
+
+
+// let p1={
+//     name : "Mohammad Ziya Shameem",
+//     age : 28,
+//     Designation : "Software Engineer",
+//     userDetail : function(){
+//         console.log(this.name);
+//     }
+// }
+// let p2={
+//     name : "Mohammad Ziya Shameem 2",
+//     age : 28,
+//     Designation : "Software Engineer",
+// }
+// p1.userDetail();
+// p1.userDetail.call(p2);
+
+// let p1={
+//     name : "Mohd Ziya",
+//     age  :  30,
+//     designation : "Backend Software Developer"
+// }
+// let p2={
+//     name : "Anas Ziya",
+//     age  : 35,
+//     designation : "Frontend Software Developer"
+// }
+// function Introduction(){
+//     console.log(`My name is ${this.name} I am ${this.age} yeras old and currently i am working as a ${this.designation}`);
+// }
+// Introduction.call(p1)
+// Introduction.call(p2)
+
+
+function toCalculateHcf(a, b){
+    let factorofFirstnum=[];
+    for(let i=1; i<a ; i++){
+        if(a%i===0){
+            console.log(factorofFirstnum.push(i));
+            
+        }
     }
-    return rev;
+    // console.log(firstFact);
+    
 }
-console.log(reverseNumber(1234));
+toCalculateHcf(12, 16)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
