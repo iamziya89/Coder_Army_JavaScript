@@ -643,18 +643,101 @@
 // Introduction.call(p2)
 
 
-function toCalculateHcf(a, b){
-    let factorofFirstnum=[];
-    for(let i=1; i<a ; i++){
-        if(a%i===0){
-            console.log(factorofFirstnum.push(i));
+// function toCalculateHcf(a, b){
+//     let factorofFirstnum=[];
+//     for(let i=1; i<a ; i++){
+//         if(a%i===0){
+//             console.log(factorofFirstnum.push(i));
             
-        }
-    }
-    // console.log(firstFact);
+//         }
+//     }
+//     // console.log(firstFact);
     
+// }
+// toCalculateHcf(12, 16)
+
+
+
+
+
+// function closureProp(){
+//     let c=0;
+//     return function(){
+//         c++;
+//         return c;
+//     }
+// }
+// const clo=closureProp();
+// console.log(clo());
+// console.log(clo());
+// console.log(clo());
+// console.log(clo());
+
+
+
+// function meoizeSquare(){
+//     let cache={};
+//     return function(n){
+//         if(n in cache){
+//             console.log("Return the value from stored result");
+//             return cache[n];
+//         }
+//         cache[n]=n*n;
+//         console.log("Calculating....");
+//         return cache[n];
+//     }
+// }
+// const memo=meoizeSquare();
+// console.log(memo(5));
+// console.log(memo(5));
+// console.log(memo(5));
+// console.log(memo(5));
+
+const p1={
+    name : "Anas Ziya",
+    age : 38,
+    address : function (){
+        console.log(`My name is ${this.name} and I am ${this.age} years old`);
+    }
 }
-toCalculateHcf(12, 16)
+const p2={
+    name : "Mohd Ziya",
+    age : 38,
+}
+p1.address.call(p2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
