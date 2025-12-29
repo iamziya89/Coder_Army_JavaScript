@@ -693,18 +693,33 @@
 // console.log(memo(5));
 // console.log(memo(5));
 
-const p1={
-    name : "Anas Ziya",
-    age : 38,
-    address : function (){
-        console.log(`My name is ${this.name} and I am ${this.age} years old`);
-    }
-}
-const p2={
-    name : "Mohd Ziya",
-    age : 38,
-}
-p1.address.call(p2);
+// const p1={
+//     name : "Anas Ziya",
+//     age : 38,
+//     address : function (){
+//         console.log(`My name is ${this.name} and I am ${this.age} years old`);
+//     }
+// }
+// const p2={
+//     name : "Mohd Ziya",
+//     age : 38,
+// }
+// p1.address.call(p2);
+
+
+
+// document.querySelector('.gp').addEventListener("click",()=>{
+//     console.log("Grand Parent Clicked");
+    
+// },true)
+// document.querySelector('.par').addEventListener("click",()=>{
+//     console.log("Parent Clicked");
+    
+// },true)
+// document.querySelector('.child').addEventListener("click",()=>{
+//     console.log("Child Clicked");
+    
+// },true)
 
 
 
