@@ -722,6 +722,67 @@
 // },true)
 
 
+// let arr=[4,20,5,8]
+// let sortArr=arr.sort((a,b)=>{
+//     return b-a;
+// })
+// console.log(sortArr);
+
+
+// for(let i=1; i<=5; i++){
+//     let str=" ";
+//     for(let j=5; j>=i; j--){
+//         str=str+" * "
+//     }
+//     console.log(str);
+    
+// }
+
+// 
+
+function digitToNumber(digit){
+    let num=0;
+    digit.forEach((d,i)=>{
+        num+=d*Math.pow(10, i)
+    })
+    return num;
+}
+console.log(digitToNumber([2,4,6,5,7]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
