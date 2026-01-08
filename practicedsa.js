@@ -740,14 +740,157 @@
 
 // 
 
-function digitToNumber(digit){
-    let num=0;
-    digit.forEach((d,i)=>{
-        num+=d*Math.pow(10, i)
-    })
-    return num;
-}
-console.log(digitToNumber([2,4,6,5,7]));
+// function digitToNumber(digit){
+//     let num=0;
+//     digit.forEach((d,i)=>{
+//         num+=d*Math.pow(10, i)
+//     })
+//     return num;
+// }
+// console.log(digitToNumber([2,4,6,5,7]));
+
+
+// let n=10
+// for(let i=1; i<=n; i++){
+//     console.log(n-i+1);
+// }
+
+
+// ?Prime Number;
+
+// let num=18;
+// for(let i=2; i<=num/2; i++){
+//     if(num%2==0){
+//         console.log(`The Number ${num} is NOT PRIME`);
+//         break;
+//     }
+//     else{
+//         console.log(`The Number ${num} is PRIME`);
+//         break;
+//     }
+// }
+// console.log(test);
+// var test=function(){
+//     console.log("Mohammad Ziya Shameem");
+// }
+
+// var x=10;
+// function testValue(){
+//     console.log(x);
+//     let x=20;
+// }
+// console.log(x);
+// testValue();
+
+
+// let arr=[11,12,13,14,15]
+// for(let i=0; i<arr.length/2; i++){
+//     var temp=arr[i];
+//     arr[i]=arr[arr.length-1-i];
+//     arr[arr.length-1-i]=temp;
+// }
+// console.log(arr);
+
+// function outer(){
+//     let count=0;
+//     return function(){
+//         count++;
+//         return count;
+//     }
+// }
+// let myFun=outer();
+// console.log(myFun());
+// console.log(myFun());
+// console.log(myFun());
+
+// function memoization(){
+//     let cache={};
+//     return function(n){
+//         if(n in cache){
+//             console.log("Stored results");
+//             return cache[n]
+//         }
+//         console.log("Calculating .....");
+//         cache[n]=n*n;
+//         return cache[n];
+//     }
+// }
+// let myFun=memoization();
+// console.log(myFun(6));
+// console.log(myFun(6));
+// console.log(myFun(6));
+
+
+// function sum(a){
+//     return function(b){
+//         return function(c){
+//             return a+b+c;
+//         }
+//     }
+// }
+// console.log(sum(2)(3)(5));
+
+// let userDetails={
+//     name : "Mohd Ziya",
+//     age  : 28,
+//     profession : "Software Engineers",
+//     printDetails : function(){
+//         console.log(this.name);
+        
+//     }
+// }
+// let userDetails2={
+//     name : "Anas Ziya",
+//     age  : 30,
+//     profession : "Software Engineers",
+// }
+// userDetails.printDetails.call(userDetails2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
