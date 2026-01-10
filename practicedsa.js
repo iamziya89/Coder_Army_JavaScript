@@ -847,6 +847,60 @@
 // userDetails.printDetails.call(userDetails2);
 
 
+// function isPrimeNumber(n){
+//     if(n===1) console.log(`${n} is neither Prime nor Composite Number`);
+    
+//     else if(n<0) console.log(`${n} is not a Prime Number`);
+    
+//     else{
+//         for(let i=2; i<n; i++){
+//             if(n%i==0){
+//                 console.log(`${n} is not a prime Number`);
+//                 break;
+//             }
+//             else{
+//                 console.log(`${n} is  PRIME NUMBER`);
+//                 break;
+//             }
+//         }
+//     }
+// }
+// isPrimeNumber(11)
+
+// function allFactors(n){
+//     let factor=[];
+//     for(let i=1; i<=n; i++){
+//         if(n%i===0){
+//             factor.push(i);
+//         }
+//     }
+//     return factor;
+// }
+// console.log(allFactors(18));
+
+
+// function multipleOfNumber(num, limit){
+//         let multiple=[];
+//     for(let i=num; i<=limit; i+=num){
+//         multiple.push(i);
+//     }
+//     return multiple;
+// }
+// console.log(multipleOfNumber(5, 67));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
