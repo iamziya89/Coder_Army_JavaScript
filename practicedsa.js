@@ -888,6 +888,70 @@
 // }
 // console.log(multipleOfNumber(5, 67));
 
+// let pr=prompt("Enter the number")
+// if(pr===null){
+//     console.log("Cancelled Please Enter the valid number");
+// }
+// else{
+//     var n=Number(pr)
+//     if(n<)
+// }
+
+// for(var i=1;i<10;i++){
+//     console.log("HELLOW");
+// }
+// console.log(i);
+// let num=Number(prompt("Enter the Number......."))
+// if(isNaN(num)){
+//     console.log("Invalid Number, Please Enter the valid number..");
+// }
+// else{
+//     if(num>0){
+//         // console.log("Enter the positive number");
+//         let fact=1;
+//         for(let i=1; i<=num; i++){
+//             fact*=i;
+//         }
+//         console.log(`The factorial of ${num} will be : `,fact);
+//     }
+//     else{
+//         console.log("Number Should be Postive and greater than zero");
+        
+//     }
+// }
+
+
+// let pr=prompt("Enter the number...")
+// if(pr === null){
+//    console.log("cancelled....");
+   
+// }
+let pr = prompt("Enter the number...");
+
+if (pr === null) {
+    console.log("cancelled....");
+}
+
+else{
+    let num=Number(pr);
+    if(isNaN(num)){
+        console.log(`Number is Invalid Number`);
+    }
+    else{
+        if(num>0){
+            for(let i=2; i<=Math.floor(num/2); i++){
+                if(num%i===0){
+                    console.log(`${num} is PRIME NUMBER`);
+                    break;
+                }
+            }
+        }
+        else{
+            console.log(`Number Should be Positive and Greater than Zero...`);
+            
+        }
+    }
+}
 
 
 
