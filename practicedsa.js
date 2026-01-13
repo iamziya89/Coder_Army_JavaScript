@@ -971,7 +971,12 @@ else{
                 rev=rev*10+rem;
                 num=Math.floor(num/10)
             }
-            console.log(`The reverse of ${copy} will be : ${rev}` );
+            if(copy===rev){
+                console.log("Pallindrome");
+            }
+            else{
+                console.log("NOT PALLINDROME");
+            }
             
         }
         else{
