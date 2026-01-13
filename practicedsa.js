@@ -926,33 +926,59 @@
 //    console.log("cancelled....");
    
 // }
-let pr = prompt("Enter the number...");
+// let pr = prompt("Enter the number...");
 
-if (pr === null) {
-    console.log("cancelled....");
+// if (pr === null) {
+//     console.log("cancelled....");
+// }
+
+// else{
+//     let num=Number(pr);
+//     if(isNaN(num)){
+//         console.log(`Number is Invalid Number`);
+//     }
+//     else{
+//         if(num>0){
+//             for(let i=2; i<=Math.floor(num/2); i++){
+//                 if(num%i===0){
+//                     console.log(`${num} is PRIME NUMBER`);
+//                     break;
+//                 }
+//             }
+//         }
+//         else{
+//             console.log(`Number Should be Positive and Greater than Zero...`);
+            
+//         }
+//     }
+// }
+
+let pr=prompt("Enter the number.....")
+if(pr===null){
+    console.log("Cancelled......");
 }
-
 else{
     let num=Number(pr);
     if(isNaN(num)){
-        console.log(`Number is Invalid Number`);
+        console.log("Please Enter the Valid Number......");
     }
     else{
         if(num>0){
-            for(let i=2; i<=Math.floor(num/2); i++){
-                if(num%i===0){
-                    console.log(`${num} is PRIME NUMBER`);
-                    break;
-                }
+            let copy=num;
+            let rev=0;
+            while(num>0){
+                let rem=num%10;
+                rev=rev*10+rem;
+                num=Math.floor(num/10)
             }
+            console.log(`The reverse of ${copy} will be : ${rev}` );
+            
         }
         else{
-            console.log(`Number Should be Positive and Greater than Zero...`);
-            
+            console.log("Number Should be Positive and greater than one");
         }
     }
 }
-
 
 
 
