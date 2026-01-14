@@ -953,50 +953,144 @@
 //     }
 // }
 
-let pr=prompt("Enter the number.....")
-if(pr===null){
-    console.log("Cancelled......");
-}
-else{
-    let num=Number(pr);
-    if(isNaN(num)){
-        console.log("Please Enter the Valid Number......");
+// let pr=prompt("Enter the number.....")
+// if(pr===null){
+//     console.log("Cancelled......");
+// }
+// else{
+//     let num=Number(pr);
+//     if(isNaN(num)){
+//         console.log("Please Enter the Valid Number......");
+//     }
+//     else{
+//         if(num>0){
+//             let copy=num;
+//             let rev=0;
+//             while(num>0){
+//                 let rem=num%10;
+//                 rev=rev*10+rem;
+//                 num=Math.floor(num/10)
+//             }
+//             if(copy===rev){
+//                 console.log("Pallindrome");
+//             }
+//             else{
+//                 console.log("NOT PALLINDROME");
+//             }
+            
+//         }
+//         else{
+//             console.log("Number Should be Positive and greater than one");
+//         }
+//     }
+// }
+
+
+
+// let pr=prompt("Enter the number that you want to sum.....")
+// if(pr===null){
+//     console.log("Cancelled");
+// }
+// else{
+//     let n=Number(pr);
+//     if(n>0){
+//         for(let i=2; i<=n; i++){
+//             if(n%i===0){
+//                 console.log(`The number ${n} is NOT PRIME NUMBER`);
+//                 break;
+//             }
+//             else{
+//                 console.log(`The number ${n} is a PRIME NUMBER`);
+//                 break;
+//             }
+//         }
+//     }
+//     else{
+//         console.log("Number Should be Positiv and greater than One......");
+//     }
+// }
+
+
+// let pr=prompt("Enter the Number");
+// if(pr===null){
+//     console.log("Cancelled.......");
+// }
+// else{
+//     let n=Number(pr);
+//     if(isNaN(n)){
+//         console.log("Invalid Number");
+//     }
+//     else if(n<=1){
+//         console.log("Number Should be greater than 1");
+//     }
+//     else{
+//         let isPrime=true;
+//         for(let i=2; i<=n; i++){
+//             if(n%i===0){
+//                 isPrime=false;
+//                 break;
+//             }
+//         }
+//         if(isPrime){
+//             console.log(`${n} is a PRIME NUMBER`);
+//         }
+//         else{
+//             console.log(`${n} is NOT A PRIME NUMBER`);
+//         }
+//     }
+// }
+
+
+// let p=prompt("Enter the Number.....");
+// if(p===null){
+//     console.log("Cancelled............");
+// }
+// else{
+//     let n=Number(p);
+//     if(isNaN(n)){
+//         console.log("Please Enter the Valid number....");
+//     }
+//     else if(n<=1){
+//         console.log("Number Should be greater than 1");
+//     }
+//     else{
+//         let isPrime=true;
+//         for(let i=2; i<n; i++){
+//             if(n%i===0){
+//                 isPrime=false;
+//                 break;
+//             }
+//         }
+//         if(isPrime){
+//            console.log(`${n} is a PRIME NUMBER`); 
+//         }
+//         else{
+//             console.log(`${n} is a NOT A PRIME NUMBER`);
+//         }
+//     }
+// }
+
+
+function isStrong(n){
+    let copy=n;
+    let sum=0;
+    while(n>0){
+        let rem=n%10;
+        let fact=1;
+        for(var i=1; i<=rem; i++){
+            fact=fact*i;
+        }
+        sum+=fact;
+        n=Math.floor(n%10);
+    }
+    if(sum===copy){
+        console.log(`${copy}is Strong Number`);
     }
     else{
-        if(num>0){
-            let copy=num;
-            let rev=0;
-            while(num>0){
-                let rem=num%10;
-                rev=rev*10+rem;
-                num=Math.floor(num/10)
-            }
-            if(copy===rev){
-                console.log("Pallindrome");
-            }
-            else{
-                console.log("NOT PALLINDROME");
-            }
-            
-        }
-        else{
-            console.log("Number Should be Positive and greater than one");
-        }
+        console.log(`${copy}is Not Strong Number`);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+isStrong(145)
 
 
 
