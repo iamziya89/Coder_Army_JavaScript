@@ -1071,33 +1071,53 @@
 // }
 
 
-function isStrong(n){
-    let copy=n;
-    let sum=0;
-    while(n>0){
-        let rem=n%10;
-        let fact=1;
-        for(var i=1; i<=rem; i++){
-            fact=fact*i;
-        }
-        sum+=fact;
-        n=Math.floor(n/10);
+// function isStrong(n){
+//     let copy=n;
+//     let sum=0;
+//     while(n>0){
+//         let rem=n%10;
+//         let fact=1;
+//         for(var i=1; i<=rem; i++){
+//             fact=fact*i;
+//         }
+//         sum+=fact;
+//         n=Math.floor(n/10);
+//     }
+//     if(sum===copy){
+//         console.log(`${copy} is Strong Number`);
+//     }
+//     else{
+//         console.log(`${copy} is Not Strong Number`);
+//     }
+// }
+// isStrong(145)
+// isStrong(40585)
+// isStrong(405)
+// isStrong(7)
+
+
+let revNumber=(n)=>{
+    if(n<0){
+        console.log("Please Enter Positive number");
     }
-    if(sum===copy){
-        console.log(`${copy} is Strong Number`);
+    else if(isNaN(n)){
+        console.log("Please Neter the Number no string" );
     }
     else{
-        console.log(`${copy} is Not Strong Number`);
-    }
+        let rev=0;
+        if(n>0){
+            let rev=0;
+            while(n>0){
+                let rem=n%10;
+                rev=rev*10+rem;
+                n=Math.floor(n/10);
+            }
+             console.log(rev);
+        }
+       
+    }       
 }
-isStrong(145)
-isStrong(40585)
-isStrong(405)
-isStrong(7)
-
-
-
-
+revNumber(123456)
 
 
 
