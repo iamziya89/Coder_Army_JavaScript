@@ -1081,16 +1081,19 @@ function isStrong(n){
             fact=fact*i;
         }
         sum+=fact;
-        n=Math.floor(n%10);
+        n=Math.floor(n/10);
     }
     if(sum===copy){
-        console.log(`${copy}is Strong Number`);
+        console.log(`${copy} is Strong Number`);
     }
     else{
-        console.log(`${copy}is Not Strong Number`);
+        console.log(`${copy} is Not Strong Number`);
     }
 }
 isStrong(145)
+isStrong(40585)
+isStrong(405)
+isStrong(7)
 
 
 
