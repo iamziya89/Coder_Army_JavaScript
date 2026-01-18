@@ -1096,33 +1096,84 @@
 // isStrong(7)
 
 
-let revNumber=(n)=>{
-    if(n<0){
-        console.log("Please Enter Positive number");
-    }
-    else if(isNaN(n)){
-        console.log("Please Neter the Number no string" );
-    }
-    else{
-        let rev=0;
-        if(n>0){
-            let rev=0;
-            while(n>0){
-                let rem=n%10;
-                rev=rev*10+rem;
-                n=Math.floor(n/10);
-            }
-             console.log(rev);
-        }
+// let revNumber=(n)=>{
+//     if(n<0){
+//         console.log("Please Enter Positive number");
+//     }
+//     else if(isNaN(n)){
+//         console.log("Please Neter the Number no string" );
+//     }
+//     else{
+//         let rev=0;
+//         if(n>0){
+//             let rev=0;
+//             while(n>0){
+//                 let rem=n%10;
+//                 rev=rev*10+rem;
+//                 n=Math.floor(n/10);
+//             }
+//              console.log(rev);
+//         }
        
-    }       
+//     }       
+// }
+// revNumber(12345678)
+
+
+// let pr=prompt("Enter the number that you want to som ofthe digit........")
+// // console.log(pr);
+// if(pr===null){
+//     console.log("Cancelled.........");
+// }
+// else{
+//     let n=Number(pr)
+//    if(isNaN(n)){
+//     console.log("INVALID NUMBER, PLEASE ENTER THE VALID NUMBER>>>>");
+//    }
+//    else if(n<0){
+//     console.log("Please Enter the POSITIVE NUMBER.........");
+//    }
+//    else{
+//     let copy=n;
+//     let sum=0;
+//     while(n>0){
+//         let rem=n%10;
+//         sum+=rem;
+//         n=Math.floor(n/10);
+//     }
+//     console.log(`The Sum of digit of Number ${copy} will be : ${sum}`);
+//    }
+// }
+
+
+
+
+let pr=prompt("Enter the number that you want to som ofthe digit........")
+// console.log(pr);
+if(pr===null){
+    console.log("Cancelled.........");
 }
-revNumber(123456)
-
-
-
-
-
+else{
+    let n=Number(pr)
+   if(isNaN(n)){
+    console.log("INVALID NUMBER, PLEASE ENTER THE VALID NUMBER>>>>");
+   }
+   else if(n<0){
+    console.log("Please Enter the POSITIVE NUMBER.........");
+   }
+   else{
+    
+    while(n>0){
+        let rem=n%10;
+        let fac=1;
+        for(let i=1; i<=rem;i++){
+            fac*=i;
+        }
+        console.log(fac);
+        
+        n=Math.floor(n/10);
+   }
+}
 
 
 
