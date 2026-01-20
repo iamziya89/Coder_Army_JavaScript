@@ -1148,32 +1148,128 @@
 
 
 
-let pr=prompt("Enter the number that you want to som ofthe digit........")
-// console.log(pr);
-if(pr===null){
-    console.log("Cancelled.........");
-}
-else{
-    let n=Number(pr)
-   if(isNaN(n)){
-    console.log("INVALID NUMBER, PLEASE ENTER THE VALID NUMBER>>>>");
-   }
-   else if(n<0){
-    console.log("Please Enter the POSITIVE NUMBER.........");
-   }
-   else{
+// let pr=prompt("Enter the number that you want to som ofthe digit........")
+// // console.log(pr);
+// if(pr===null){
+//     console.log("Cancelled.........");
+// }
+// else{
+//     let n=Number(pr)
+//    if(isNaN(n)){
+//     console.log("INVALID NUMBER, PLEASE ENTER THE VALID NUMBER>>>>");
+//    }
+//    else if(n<0){
+//     console.log("Please Enter the POSITIVE NUMBER.........");
+//    }
+//    else{
     
-    while(n>0){
-        let rem=n%10;
-        let fac=1;
-        for(let i=1; i<=rem;i++){
-            fac*=i;
-        }
-        console.log(fac);
+//     while(n>0){
+//         let rem=n%10;
+//         let fac=1;
+//         for(let i=1; i<=rem;i++){
+//             fac*=i;
+//         }
+//         console.log(fac);
         
-        n=Math.floor(n/10);
-   }
+//         n=Math.floor(n/10);
+//    }
+// }
+
+// function strongNumber(n){
+//     if(n<0){
+//         console.log(`Plese enter the valid number and also enter the positive number....`);
+//     }
+//     else{
+//         let sum=0;
+//         let copy=n;
+//         while(n>0){
+//             let rem=n%10;
+//             let fact=1;
+//             for(let i=1; i<=rem; i++){
+//                 fact*=i;
+//             }
+//             sum+=fact;
+//             n=Math.floor(n/10);
+//         }
+//         if(copy===sum){
+//             console.log("Number is Strong");
+//         }
+//         else{
+//             console.log("Number is NOT Strong");
+//         }
+//     }
+// }
+// strongNumber(40585)
+
+// let random = Math.floor((Math.random() * 100) + 1);
+// let guess = Number(prompt("Enter the number......."));
+
+
+// if (guess > random) {
+//     console.log("Too high, try again");
+// }
+// else if (guess < random) {
+//     console.log("Too Low Try aGain");
+// }
+// else {
+//     console.log("Congratulation the number was", guess);
+// }
+
+// console.log("Mohd");
+// console.log("ZIYA");
+
+// function isPrime(n){
+//     if(n<0){
+//         console.log("Enter Positive Number");
+        
+//     }
+//     else if(n===1){
+//         console.log(`1 is neither prome not coprime`)
+//     }
+//     else if(n===2){
+//         console.log(`${n} is Prime Number`)
+//     }
+//     for(let i=3; i<=n; i++){
+//         if(n%3===0){
+//             console.log(`${n} is nOT A PRIME NUMBER`)
+//         }
+//         else{
+//             console.log(`${n} is A PRIME NUMBER`)
+//         }
+//     }
+// }
+// isPrime(1);
+// isPrime(2);
+// isPrime(3);
+
+// console.log("*");
+// console.log("*");
+// console.log("*");
+
+// process.stdout.write("* ");
+// process.stdout.write("* ");
+// process.stdout.write("* ");
+// process.stdout.write("* ");
+// process.stdout.write("* ");
+// process.stdout.write("* ");
+
+
+// let x=require('prompt-sync')();
+// let n=Number(x("Enter the number : "));
+// for(let i=n; i>=1; i--){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(j);
+//     }
+//     console.log();
+    
+// }
+
+let pr=require('prompt-sync')();
+let num=Number(pr("Enter the number...."));
+for(let i=1; i<=5; i++){
+    for(let j=1; j<=)
 }
+
 
 
 
