@@ -1264,11 +1264,81 @@
     
 // }
 
-let pr=require('prompt-sync')();
-let num=Number(pr("Enter the number...."));
-for(let i=1; i<=5; i++){
-    for(let j=1; j<=)
+// let pr=require('prompt-sync')();
+// let num=Number(pr("Enter the number:"));
+// for(let i=num; i>=1; i--){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(i+" ");
+//     }
+//     console.log();
+// }
+
+// for(let i=5; i>=1; i--){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(i+" ")
+//     }
+//     console.log();
+    
+// }
+
+
+// for(let i=5; i>=1; i--){
+//     let ascii=65;
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(String.fromCharCode(ascii)+" ");
+//         ascii++;
+//     }
+//     console.log();
+//     // ascii++;
+// }
+
+// let arr=[];
+// arr.push(10);
+// arr.push(20);
+// arr.push(30);
+// arr.push(40);
+// arr.push(50);
+// console.log(arr);
+
+// let arr=new Array(3);
+// arr[0]=10;
+// arr[1]=20;
+// arr[2]=30;
+// arr[3]=40;
+// arr[4]=50;
+// console.log(arr);
+
+// let arr=new Array(3);
+// arr.push(10);
+// console.log(arr);
+
+let p=require('prompt-sync')();
+let arr=new Array(5);
+let sum=0;
+for(let i=0; i<arr.length; i++){
+    arr[i]=Number(p("Enter the Number : "))
 }
+// console.log(arr);
+for(let j=0; j<arr.length; j++){
+    sum+=arr[j];
+}
+console.log(sum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
