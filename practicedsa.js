@@ -1312,19 +1312,28 @@
 // arr.push(10);
 // console.log(arr);
 
-let p=require('prompt-sync')();
-let arr=new Array(5);
-let sum=0;
-for(let i=0; i<arr.length; i++){
-    arr[i]=Number(p("Enter the Number : "))
-}
-// console.log(arr);
-for(let j=0; j<arr.length; j++){
-    sum+=arr[j];
-}
-console.log(sum);
+// let p=require('prompt-sync')();
+// let arr=new Array(5);
+// let sum=0;
+// for(let i=0; i<arr.length; i++){
+//     arr[i]=Number(p("Enter the Number : "))
+// }
+// // console.log(arr);
+// for(let j=0; j<arr.length; j++){
+//     sum+=arr[j];
+// }
+// console.log(sum);
 
 
+// MAX ELEMEMNT OF AN ARRAYS
+let arr=[10,2,78,100,423,0];
+let min=arr[0];
+for(let i=1; i<arr.length; i++){
+    if(min>arr[i]){
+        min=arr[i];
+    }
+}
+console.log(`MAX: ${min}`);
 
 
 
