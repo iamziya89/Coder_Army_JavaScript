@@ -1326,17 +1326,67 @@
 
 
 // MAX ELEMEMNT OF AN ARRAYS
-let arr=[10,2,78,100,423,0];
-let min=arr[0];
-for(let i=1; i<arr.length; i++){
-    if(min>arr[i]){
-        min=arr[i];
-    }
-}
-console.log(`MAX: ${min}`);
+// let arr=[10,2,78,100,423,1];
+// let min=arr[0];
+// for(let i=1; i<arr.length; i++){
+//     if(min>arr[i]){
+//         min=arr[i];
+//     }
+// }
+// console.log(`MIN: ${min}`);
+
+// let arr=[10, 30, 56, 43, 29, 64, 49, 60,62,12]
+// let max=Math.min(arr[0], arr[1]);
+// let Smax=Math.max(arr[0], arr[1]);
+// // console.log(max, Smax);
+// for(let i=2; i<arr.length; i++){
+//     if(arr[i]<max){
+//         Smax=max;
+//         max=arr[i];
+//     }
+//     else if(arr[i]<Smax && max != arr[i]){
+//         Smax=arr[i];
+//     }
+// }
+// console.log(Smax);
+
+
+// let arr=[10,20,30,40,50];
+// let temp=new Array(arr.length);
+// let j=0;
+// for(let i=arr.length-1; i>=0; i--){
+//     temp[j]=arr[i];
+//     j++;
+// }
+// console.log(temp);
+
+
+// let arr=[10, 20, 30, 40, 50, 60];
+// let i=0;
+// let j=arr.length-1;
+// while(i<j){
+//     let t=arr[i];
+//     arr[i]=arr[j];
+//     arr[j]=t;
+//     i++;
+//     j--;
+// }
+// console.log(arr);
 
 
 
+// let arr=[0, 0, 1, 1, 0,1,0,1,0,];
+// let i=0, j=0;
+// while(i<arr.length){
+//     if(arr[i] ==0){
+//         let temp=arr[i];
+//         arr[i]=arr[j];
+//         arr[j]=temp;
+//         j++;
+//     }
+//     i++;
+// }
+// console.log(arr);
 
 
 
