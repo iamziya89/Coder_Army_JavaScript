@@ -1389,6 +1389,85 @@
 // console.log(arr);
 
 
+// let arr=[1,2,3,4,5]
+// let copy=arr[0];
+// for(let i=0; i<arr.length-1; i++){
+//     arr[i]=arr[i+1];
+// }
+// arr[arr.length-1]=copy;
+// console.log(arr);
+
+
+// let arr=[1,2,3,4,5];
+// let copy=arr[arr.length-1];
+// for(let i=arr.length-1; i>=1; i--){
+//     arr[i]=arr[i-1]
+// }
+// arr[0]=copy;
+// console.log(arr);
+
+
+// function reverseNumber(n){
+//     if(n<0){
+//         console.log("Please Enter the positive number : ");
+//     }
+//     else{
+//         let rev=0;
+//         while(n>0){
+//             let rem=n%10;
+//             rev=rev*10+rem;
+//             n=Math.floor(n/10);
+//         }
+//         console.log(rev);
+//     }
+// }
+// reverseNumber(123457)
+
+
+
+// function sumofDigit(n){
+//     let copy=n;
+//     if(n<0){
+//         console.log("Please Enter the Positive Number : ");
+//     }
+//     else{
+//         let sum=0;
+//         while(n>0){
+//             let rem=n%10;
+//             sum+=rem;
+//             n=Math.floor(n/10);
+//         }
+//         return `the sum of the digit of num ${copy} will be ${sum}`
+//     }
+// }
+// console.log(sumofDigit(12345));
+
+
+
+function strongNumber(n){
+    let copy=n;
+    let sum=0;
+    if(n<0){
+        return "Please Enter the Positive Number"
+    }
+    else{
+        while(n>0){
+            let rem=n%10;
+            let fact=1;
+            for(let i=1; i<=rem; i++){
+                fact=fact*i;
+            }
+            sum+=fact;
+            n=Math.floor(n/10);
+        }
+        if(copy===sum) return `the number ${copy} is a STRONG NUMBER`
+        else return `NOT A STRONG NUMBER`
+    }
+}
+console.log(strongNumber(145));
+
+
+
 
 
 
