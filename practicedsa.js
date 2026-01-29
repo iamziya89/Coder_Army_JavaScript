@@ -1444,30 +1444,44 @@
 
 
 
-function strongNumber(n){
-    let copy=n;
-    let sum=0;
-    if(n<0){
-        return "Please Enter the Positive Number"
-    }
+// function strongNumber(n){
+//     let copy=n;
+//     let sum=0;
+//     if(n<0){
+//         return "Please Enter the Positive Number"
+//     }
+//     else{
+//         while(n>0){
+//             let rem=n%10;
+//             let fact=1;
+//             for(let i=1; i<=rem; i++){
+//                 fact=fact*i;
+//             }
+//             sum+=fact;
+//             n=Math.floor(n/10);
+//         }
+//         if(copy===sum) return `the number ${copy} is a STRONG NUMBER`
+//         else return `NOT A STRONG NUMBER`
+//     }
+// }
+// console.log(strongNumber(145));
+
+
+// Sum of n natural Number
+
+function sumOfnaturalNumber(n){
+    if(n<0) return `please Enter the positive number`
     else{
-        while(n>0){
-            let rem=n%10;
-            let fact=1;
-            for(let i=1; i<=rem; i++){
-                fact=fact*i;
+        if(n>0){
+            let sum=0;
+            for(let i=1; i<-n ; i++){
+                sum+=i
             }
-            sum+=fact;
-            n=Math.floor(n/10);
+            console.log(sum);
         }
-        if(copy===sum) return `the number ${copy} is a STRONG NUMBER`
-        else return `NOT A STRONG NUMBER`
     }
 }
-console.log(strongNumber(145));
-
-
-
+console.log(sumOfnaturalNumber(5));
 
 
 
