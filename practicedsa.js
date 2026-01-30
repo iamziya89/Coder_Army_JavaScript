@@ -1469,30 +1469,80 @@
 
 // Sum of n natural Number
 
-function sumOfnaturalNumber(n){
-    if(n<0) return `please Enter the positive number`
-    else{
-        if(n>0){
-            let sum=0;
-            for(let i=1; i<-n ; i++){
-                sum+=i
-            }
-            console.log(sum);
-        }
-    }
-}
-console.log(sumOfnaturalNumber(5));
+// function sumOfnaturalNumber(n){
+//     if(n<0) return `please Enter the positive number`
+//     else{
+//         if(n>0){
+//             let sum=0;
+//             for(let i=1; i<=n ; i++){
+//                 sum+=i
+//             }
+//             return sum;
+//         }
+//     }
+// }
+// console.log(sumOfnaturalNumber(7));
 
 
+// function factorial(n) {
+//     if(n>0){
+//         let fact=1;
+//         for(let i=1; i<=n; i++){
+//             fact*=i;
+//         }
+//         console.log(fact);
+//     }
+//     else{
+//         console.log("Please Enter positive number");
+//     }
+// }
+// factorial(6)
 
 
+// function isPrime(n){
+//     if(n<=1) return "Neither Prime nor Composite";
+//     else{
+//         for(let i=2; i<=Math.sqrt(n); i++){
+//             if(n%i===0) {
+//                 return `${n} NOT PRIME NUMBER`;
+//                 break;
+//             }
+//         }
+//         return `${n} Prime Number`
+//     }
+// }
+
+// console.log(isPrime(2));
+// console.log(isPrime(4));
+// console.log(isPrime(7));
 
 
+// let prompt=require('prompt-sync')();
+// let guess=0;
+// let random=Math.floor(Math.random()*100+1);
+// while(guess != random){
+//     guess=Number(prompt("Enter the value : "));
+//     if(isNaN(guess) || guess<1 || guess>100){
+//         console.log("Try Agin...");
+//     }
 
+//     else if(guess>random){
+//         console.log("Too High, TRY AGAIN");
+//     }
+//     else if(guess<random){
+//         console.log("Too LOW, TRY AGAIN");
+//     }
+//     else{
+//         console.log("Congratulation the number was ", guess);
+//     }
+// }
 
-
-
-
+// for(let i=1; i<=5; i++){
+//     for(let j=1; j>=i; j++){
+//         process.stdout.write("* ")
+//     }
+//     console.log();
+// }
 
 
 
