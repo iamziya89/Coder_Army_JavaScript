@@ -1545,6 +1545,22 @@
 // }
 
 
+function outer(){
+    let c=0;
+    return function(){
+        c++;
+        return c;
+    }
+}
+let myfunc=outer();
+console.log(myfunc());
+console.log(myfunc());
+console.log(myfunc());
+
+
+
+
+
 
 
 
