@@ -1545,17 +1545,46 @@
 // }
 
 
-function outer(){
-    let c=0;
-    return function(){
-        c++;
-        return c;
+// function outer(){
+//     let c=0;
+//     return function(){
+//         c++;
+//         return c;
+//     }
+// }
+// let myfunc=outer();
+// console.log(myfunc());
+// console.log(myfunc());
+// console.log(myfunc());
+
+
+function memoize(){
+    let cache={};
+    return function(n){
+        if(n in cache){
+            console.log("Stired result....");
+            return cache[n]
+        }
+        console.log("Calculating...........");
+        cache[n]=n*n;
+        return cache[n];
     }
 }
-let myfunc=outer();
-console.log(myfunc());
-console.log(myfunc());
-console.log(myfunc());
+let x =memoize();
+console.log(x(5));
+console.log(x(5));
+console.log(x(5));
+console.log(x(5));
+
+
+
+
+
+
+
+
+
+
 
 
 
