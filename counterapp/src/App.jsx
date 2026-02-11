@@ -31,10 +31,10 @@ function App() {
   )
 }
 
-function Button({text, func}){
+function Button(obj){
   return(
     <>
-     <button onClick={func}>{text}</button>
+     <button onClick={obj.func}>{obj.text}</button>
     </>
   )
 }
