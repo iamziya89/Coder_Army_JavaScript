@@ -29,7 +29,7 @@
 // let x=Object.entries(obj)
 // for(let i=0; i<x.length; i++){
 //     for(let j=0; j<x[i].length; j++){
-//         console.log(x[i][j]); 
+//         console.log(x[i][j]);
 //     }
 // }
 
@@ -42,7 +42,6 @@
 // let arr3=[...arr1, ...arr2]
 // console.log(arr3);
 
-
 // let arr=[5,2,9,1,22,15,50,24]
 // for(let i=0; i<arr.length; i++){
 //     for(let j=0; j<arr.length; j++){
@@ -54,7 +53,6 @@
 //     }
 // }
 // console.log(arr);
-
 
 // let revStr=(str)=>{
 //     let rev=""
@@ -114,7 +112,7 @@
 
 // setTimeout(()=>{
 //     console.log("Mohd Ziya 1");
-    
+
 // },5000)
 // setTimeout(()=>{
 //     console.log("Mohd Ziya 2");
@@ -125,7 +123,7 @@
 // console.log("First");
 // setTimeout(()=>{
 //     console.log("Executed 1");
-    
+
 // },5000);
 // setTimeout(()=>{
 //     console.log("Executed 2");
@@ -137,7 +135,7 @@
 //     setTimeout(()=>{
 //         console.log("Payment Received and Order get Placed");
 //         cb();
-//     },3000) 
+//     },3000)
 // }
 // function prepaingOrder(xy){
 //     console.log("Food prepration Started");
@@ -160,19 +158,18 @@
 //     console.log("Delivered Order ready");
 //     setTimeout(()=>{
 //         console.log("Ordered Delivered");
-        
+
 //     },3000)
-    
+
 // }
 // placedOrder(()=>{
 //     prepaingOrder(()=>{
 //         pickupdelivery(()=>{
-//            deliverOrder(); 
+//            deliverOrder();
 //         });
 //     });
 // });
 // // ();
-
 
 // console.log("START");
 
@@ -190,7 +187,7 @@
 //     return res.json();
 // }).then((data)=>{
 //     console.log(data);
-    
+
 // })
 
 // const j1={
@@ -225,7 +222,7 @@
 // })
 // p2.then((data)=>{
 //     console.log(data);
-    
+
 // })
 // console.log("Ending Phase");
 
@@ -264,7 +261,7 @@
 
 // setTimeout(()=>{
 //     console.log("Time Out Executed");
-    
+
 // },3000)
 // const p1=new Promise((res, rej)=>{
 //     res("Promise")
@@ -294,7 +291,7 @@
 //     console.log("Delivered Food....");
 //     setTimeout(()=>{
 //         console.log("I have Delivered the food");
-        
+
 //     },3000)
 // }
 // payment(()=>{
@@ -303,7 +300,6 @@
 //     });
 // });
 
-
 // console.log("START");
 // const p=fetch("https://api.github.com/users")
 // const p1 =p.then((res)=>{
@@ -311,7 +307,7 @@
 // })
 // p1.then((data)=>{
 //     console.log(data);
-    
+
 // })
 
 // console.log("END");
@@ -326,17 +322,15 @@
 // const res=greet();
 // res.then((response)=>{
 //     console.log(response);
-    
+
 // }).catch((err)=>{
 //     console.log(err);
-    
+
 // }).finally(()=>{
 //     console.log("ALWAYS RUN");
-    
+
 // })
 // console.log("ENDING......");
-
-
 
 // async function greet(){
 //     return new Promise((res, rej)=>{
@@ -346,7 +340,6 @@
 // }
 // let response=greet();
 // response.then((data)=>console.log(data)).catch((err)=>console.log(err));
-
 
 // async function greet(){
 //     return new Promise((res,rej)=>{
@@ -361,19 +354,13 @@
 // const data=resp.json();
 // console.log(data);
 
-
 // console.log("LAST");
 
 // fetch("https://api.github.com/users").then((resp)=>resp.json()).then((data)=>console.log(data));
 
-
-
-
-
-
 // let n=10;
 // for(let i=1; i<=n; i++){
-//     console.log(i);  
+//     console.log(i);
 // }
 
 // let num=parseInt(prompt("Enter number that you want to print on console...."))
@@ -381,7 +368,7 @@
 // // console.log(typeof num);
 // while(num>=1){
 //     console.log(num);
-//     num--; 
+//     num--;
 // }
 // let input=document.getElementById("num");
 // // console.log(input);
@@ -394,11 +381,8 @@
 //     shownum.innerText=`${i},`
 //    }
 // btn.addEventListener("click",()=>{
-   
+
 // })
-
-
-
 
 // let num=50;
 // for(let i=0; i<=50; i++){
@@ -417,7 +401,6 @@
 // }
 // console.log(sum)
 
-
 // let num=3;
 // let fact=1;
 // for(let i=1; i<=num; i++){
@@ -435,12 +418,8 @@
 //         str+="*"
 //     }
 //     console.log(str);
-    
+
 // }
-
-
-
-
 
 // for(let i=1; i<=5; i++){
 //     let str=" ";
@@ -448,10 +427,8 @@
 //         str+="*"
 //     }
 //     console.log(str);
-    
+
 // }
-
-
 
 // function increment(){
 //     let count=0
@@ -464,7 +441,6 @@
 // console.log(myInc());
 // console.log(myInc());
 // console.log(myInc());
-
 
 // function outer() {
 //   let c = {}; // cache object
@@ -487,9 +463,7 @@
 // console.log(myInc(2)); // Return From Cache....... → 4
 // console.log(myInc(2)); // Return From Cache....... → 4
 
-
-// 
-
+//
 
 // let arr=[11,12,13,14,211,16]
 // let even=[]
@@ -501,7 +475,7 @@
 //     else{
 //         odd.push(x)
 //     }
-    
+
 // }
 //     console.log(even);
 //     console.log(odd);
@@ -517,7 +491,6 @@
 // console.log(closureproperty());
 // console.log(closureproperty());
 // console.log(closureproperty());
-
 
 // function memoizeSquare(){
 //     let cache={};
@@ -537,11 +510,10 @@
 // console.log(calculateSquare(5));
 // console.log(calculateSquare(5));
 
-
 // let num=10;
 // for(let i=1; i<=10; i++){
 //     console.log(i);
-    
+
 // }
 
 // function calculateMax(a, b, c){
@@ -557,7 +529,6 @@
 //     }
 // }
 // console.log(calculateMax(20, 30, 31));
-
 
 // function calculateBill(units){
 //     let Total;
@@ -577,11 +548,10 @@
 // }
 // console.log(calculateBill(230));
 
-
 // function digitToNumber(digit){
 //     let l=digit.length;
 //     let num=digit[l-1]*10**(l-1)+digit[l-2]*10**(l-2)+digit[l-3]*10**(l-3)+digit[l-4]*10**(l-4)
-//     console.log(num);   
+//     console.log(num);
 // }
 // digitToNumber([2,4,5,6])
 
@@ -596,7 +566,6 @@
 // }
 // console.log(reverseNumber(1234));
 
-
 // function curryingMultiplication(a){
 //     return function(b){
 //         return function (c){
@@ -608,7 +577,6 @@
 // }
 
 // console.log(curryingMultiplication(1)(2)(3)(4));
-
 
 // let p1={
 //     name : "Mohammad Ziya Shameem",
@@ -642,23 +610,18 @@
 // Introduction.call(p1)
 // Introduction.call(p2)
 
-
 // function toCalculateHcf(a, b){
 //     let factorofFirstnum=[];
 //     for(let i=1; i<a ; i++){
 //         if(a%i===0){
 //             console.log(factorofFirstnum.push(i));
-            
+
 //         }
 //     }
 //     // console.log(firstFact);
-    
+
 // }
 // toCalculateHcf(12, 16)
-
-
-
-
 
 // function closureProp(){
 //     let c=0;
@@ -672,8 +635,6 @@
 // console.log(clo());
 // console.log(clo());
 // console.log(clo());
-
-
 
 // function meoizeSquare(){
 //     let cache={};
@@ -706,21 +667,18 @@
 // }
 // p1.address.call(p2);
 
-
-
 // document.querySelector('.gp').addEventListener("click",()=>{
 //     console.log("Grand Parent Clicked");
-    
+
 // },true)
 // document.querySelector('.par').addEventListener("click",()=>{
 //     console.log("Parent Clicked");
-    
+
 // },true)
 // document.querySelector('.child').addEventListener("click",()=>{
 //     console.log("Child Clicked");
-    
-// },true)
 
+// },true)
 
 // let arr=[4,20,5,8]
 // let sortArr=arr.sort((a,b)=>{
@@ -728,17 +686,16 @@
 // })
 // console.log(sortArr);
 
-
 // for(let i=1; i<=5; i++){
 //     let str=" ";
 //     for(let j=5; j>=i; j--){
 //         str=str+" * "
 //     }
 //     console.log(str);
-    
+
 // }
 
-// 
+//
 
 // function digitToNumber(digit){
 //     let num=0;
@@ -749,12 +706,10 @@
 // }
 // console.log(digitToNumber([2,4,6,5,7]));
 
-
 // let n=10
 // for(let i=1; i<=n; i++){
 //     console.log(n-i+1);
 // }
-
 
 // ?Prime Number;
 
@@ -781,7 +736,6 @@
 // }
 // console.log(x);
 // testValue();
-
 
 // let arr=[11,12,13,14,15]
 // for(let i=0; i<arr.length/2; i++){
@@ -820,7 +774,6 @@
 // console.log(myFun(6));
 // console.log(myFun(6));
 
-
 // function sum(a){
 //     return function(b){
 //         return function(c){
@@ -836,7 +789,7 @@
 //     profession : "Software Engineers",
 //     printDetails : function(){
 //         console.log(this.name);
-        
+
 //     }
 // }
 // let userDetails2={
@@ -846,12 +799,11 @@
 // }
 // userDetails.printDetails.call(userDetails2);
 
-
 // function isPrimeNumber(n){
 //     if(n===1) console.log(`${n} is neither Prime nor Composite Number`);
-    
+
 //     else if(n<0) console.log(`${n} is not a Prime Number`);
-    
+
 //     else{
 //         for(let i=2; i<n; i++){
 //             if(n%i==0){
@@ -877,7 +829,6 @@
 //     return factor;
 // }
 // console.log(allFactors(18));
-
 
 // function multipleOfNumber(num, limit){
 //         let multiple=[];
@@ -916,15 +867,14 @@
 //     }
 //     else{
 //         console.log("Number Should be Postive and greater than zero");
-        
+
 //     }
 // }
-
 
 // let pr=prompt("Enter the number...")
 // if(pr === null){
 //    console.log("cancelled....");
-   
+
 // }
 // let pr = prompt("Enter the number...");
 
@@ -948,7 +898,7 @@
 //         }
 //         else{
 //             console.log(`Number Should be Positive and Greater than Zero...`);
-            
+
 //         }
 //     }
 // }
@@ -977,15 +927,13 @@
 //             else{
 //                 console.log("NOT PALLINDROME");
 //             }
-            
+
 //         }
 //         else{
 //             console.log("Number Should be Positive and greater than one");
 //         }
 //     }
 // }
-
-
 
 // let pr=prompt("Enter the number that you want to sum.....")
 // if(pr===null){
@@ -1009,7 +957,6 @@
 //         console.log("Number Should be Positiv and greater than One......");
 //     }
 // }
-
 
 // let pr=prompt("Enter the Number");
 // if(pr===null){
@@ -1040,7 +987,6 @@
 //     }
 // }
 
-
 // let p=prompt("Enter the Number.....");
 // if(p===null){
 //     console.log("Cancelled............");
@@ -1062,14 +1008,13 @@
 //             }
 //         }
 //         if(isPrime){
-//            console.log(`${n} is a PRIME NUMBER`); 
+//            console.log(`${n} is a PRIME NUMBER`);
 //         }
 //         else{
 //             console.log(`${n} is a NOT A PRIME NUMBER`);
 //         }
 //     }
 // }
-
 
 // function isStrong(n){
 //     let copy=n;
@@ -1095,7 +1040,6 @@
 // isStrong(405)
 // isStrong(7)
 
-
 // let revNumber=(n)=>{
 //     if(n<0){
 //         console.log("Please Enter Positive number");
@@ -1114,11 +1058,10 @@
 //             }
 //              console.log(rev);
 //         }
-       
-//     }       
+
+//     }
 // }
 // revNumber(12345678)
-
 
 // let pr=prompt("Enter the number that you want to som ofthe digit........")
 // // console.log(pr);
@@ -1145,9 +1088,6 @@
 //    }
 // }
 
-
-
-
 // let pr=prompt("Enter the number that you want to som ofthe digit........")
 // // console.log(pr);
 // if(pr===null){
@@ -1162,7 +1102,7 @@
 //     console.log("Please Enter the POSITIVE NUMBER.........");
 //    }
 //    else{
-    
+
 //     while(n>0){
 //         let rem=n%10;
 //         let fac=1;
@@ -1170,7 +1110,7 @@
 //             fac*=i;
 //         }
 //         console.log(fac);
-        
+
 //         n=Math.floor(n/10);
 //    }
 // }
@@ -1204,7 +1144,6 @@
 // let random = Math.floor((Math.random() * 100) + 1);
 // let guess = Number(prompt("Enter the number......."));
 
-
 // if (guess > random) {
 //     console.log("Too high, try again");
 // }
@@ -1221,7 +1160,7 @@
 // function isPrime(n){
 //     if(n<0){
 //         console.log("Enter Positive Number");
-        
+
 //     }
 //     else if(n===1){
 //         console.log(`1 is neither prome not coprime`)
@@ -1253,7 +1192,6 @@
 // process.stdout.write("* ");
 // process.stdout.write("* ");
 
-
 // let x=require('prompt-sync')();
 // let n=Number(x("Enter the number : "));
 // for(let i=n; i>=1; i--){
@@ -1261,7 +1199,7 @@
 //         process.stdout.write(j);
 //     }
 //     console.log();
-    
+
 // }
 
 // let pr=require('prompt-sync')();
@@ -1278,9 +1216,8 @@
 //         process.stdout.write(i+" ")
 //     }
 //     console.log();
-    
-// }
 
+// }
 
 // for(let i=5; i>=1; i--){
 //     let ascii=65;
@@ -1324,7 +1261,6 @@
 // }
 // console.log(sum);
 
-
 // MAX ELEMEMNT OF AN ARRAYS
 // let arr=[10,2,78,100,423,1];
 // let min=arr[0];
@@ -1350,7 +1286,6 @@
 // }
 // console.log(Smax);
 
-
 // let arr=[10,20,30,40,50];
 // let temp=new Array(arr.length);
 // let j=0;
@@ -1359,7 +1294,6 @@
 //     j++;
 // }
 // console.log(temp);
-
 
 // let arr=[10, 20, 30, 40, 50, 60];
 // let i=0;
@@ -1372,8 +1306,6 @@
 //     j--;
 // }
 // console.log(arr);
-
-
 
 // let arr=[0, 0, 1, 1, 0,1,0,1,0,];
 // let i=0, j=0;
@@ -1388,7 +1320,6 @@
 // }
 // console.log(arr);
 
-
 // let arr=[1,2,3,4,5]
 // let copy=arr[0];
 // for(let i=0; i<arr.length-1; i++){
@@ -1397,7 +1328,6 @@
 // arr[arr.length-1]=copy;
 // console.log(arr);
 
-
 // let arr=[1,2,3,4,5];
 // let copy=arr[arr.length-1];
 // for(let i=arr.length-1; i>=1; i--){
@@ -1405,7 +1335,6 @@
 // }
 // arr[0]=copy;
 // console.log(arr);
-
 
 // function reverseNumber(n){
 //     if(n<0){
@@ -1423,8 +1352,6 @@
 // }
 // reverseNumber(123457)
 
-
-
 // function sumofDigit(n){
 //     let copy=n;
 //     if(n<0){
@@ -1441,8 +1368,6 @@
 //     }
 // }
 // console.log(sumofDigit(12345));
-
-
 
 // function strongNumber(n){
 //     let copy=n;
@@ -1466,7 +1391,6 @@
 // }
 // console.log(strongNumber(145));
 
-
 // Sum of n natural Number
 
 // function sumOfnaturalNumber(n){
@@ -1483,7 +1407,6 @@
 // }
 // console.log(sumOfnaturalNumber(7));
 
-
 // function factorial(n) {
 //     if(n>0){
 //         let fact=1;
@@ -1497,7 +1420,6 @@
 //     }
 // }
 // factorial(6)
-
 
 // function isPrime(n){
 //     if(n<=1) return "Neither Prime nor Composite";
@@ -1515,7 +1437,6 @@
 // console.log(isPrime(2));
 // console.log(isPrime(4));
 // console.log(isPrime(7));
-
 
 // let prompt=require('prompt-sync')();
 // let guess=0;
@@ -1544,7 +1465,6 @@
 //     console.log();
 // }
 
-
 // function outer(){
 //     let c=0;
 //     return function(){
@@ -1557,418 +1477,62 @@
 // console.log(myfunc());
 // console.log(myfunc());
 
+// function memoize(){
+//     let cache={};
+//     return function(n){
+//         if(n in cache){
+//             console.log("Stired result....");
+//             return cache[n]
+//         }
+//         console.log("Calculating...........");
+//         cache[n]=n*n;
+//         return cache[n];
+//     }
+// }
+// let x =memoize();
+// console.log(x(5));
+// console.log(x(5));
+// console.log(x(5));
+// console.log(x(5));
 
-function memoize(){
-    let cache={};
-    return function(n){
-        if(n in cache){
-            console.log("Stired result....");
-            return cache[n]
-        }
-        console.log("Calculating...........");
-        cache[n]=n*n;
-        return cache[n];
-    }
+// console.log("Task 1");
+// console.log("Task 2");
+// // setTimeout(()=>{
+// //     console.log("Asynchronous Function.......");
+// // },3000)
+
+// for(let i=0; i<=444444; i++){
+//     console.log("For Loops ");
+// }
+// console.log("Task 3");
+// console.log("Task 4");
+
+// console.log("Task 1");
+// console.log("Task 2");
+// setTimeout(()=>{
+//     console.log("ASYNC TASK");
+// },2000)
+
+// console.log("Task 3");
+// console.log("Task 4");
+
+// setTimeout(() => {
+//   console.log("7 SECONDS TASK");
+// }, 7000);
+// setTimeout(() => {
+//   console.log("3 SECOND TASK");
+// }, 3000);
+// setTimeout(() => {
+//   console.log("6 SECOND TASK");
+// }, 6000);
+
+
+async function fetchData(){
+    let resp=await fetch("https://jsonplaceholder.typicode.com/users");
+    console.log(await resp.json());
 }
-let x =memoize();
-console.log(x(5));
-console.log(x(5));
-console.log(x(5));
-console.log(x(5));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+fetchData();
 
 
 
