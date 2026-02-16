@@ -1527,16 +1527,158 @@
 // }, 6000);
 
 
-async function fetchData(){
-    let resp=await fetch("https://jsonplaceholder.typicode.com/users");
-    console.log(await resp.json());
-}
+// async function fetchData(){
+//     let resp=await fetch("https://jsonplaceholder.typicode.com/users");
+//     console.log(await resp.json());
+// }
 
-fetchData();
+// fetchData();
+// console.log("Task _1");
+// console.log("Task _2");
+
+// function calculate(a,b,cb){
+//     cb(a,b);
+// }
+// function sum(a,b){
+//     console.log(a+b);
+// }
+// calculate(15,12,sum);
+// function substract(a,b,substract){
+//     console.log(a-b);
+// }
+// calculate(15,12,substract);
+// function mul(a,b){
+//     console.log(a*b)
+// }
+// calculate(15,10,mul);
+
+// function callbackfunc(a,b,cb){
+//     cb(a,b);
+// }
+// function sum(a,b){
+//     console.log(a+b);
+// }
+// function sub(a,b){
+//     console.log(a-b);
+// }
+// function mul(a,b){
+//     console.log(a*b);
+// }
+// callbackfunc(20,10,sum);
+// callbackfunc(20,10,sub);
+// callbackfunc(20,10,mul);
+
+
+// console.log("1 . Fetching Data.........");
+// function fetchData(processdata){
+//     setTimeout(()=>{
+//         // processdata();
+//         console.log("2. data fetch ho chuka hau");
+//         processdata();
+//     },2000)
+// }
+// function processdata(){
+//     console.log("3... Process with data");
+// }
+// fetchData(processdata);
+
+
+// console.log(" 1. Data is Fetching......");
+// function fetchData(cb){
+//     setTimeout(()=>{
+//         console.log("2. Data Fetch ho chuka hai.....");
+//         cb();
+//     },3000);
+// }
+// function processData(){
+//     console.log("3. Data is processing........");
+// }
+// fetchData(processData);
+
+
+// function getData(data, callback){
+//     setTimeout(()=>{
+//         console.log(data);
+//         if(callback){
+//             callback();
+//         }
+//     },2000)
+// }
+// console.log("fetching First Data");
+// getData("Data_1",()=>{
+//     getData("2nd data",()=>{
+//         getData("3rd Data",()=>{
+//             getData("4t Data")
+//         })
+//     })
+// })
+
+
+// function calculate(a,b,callback){
+//     callback(a,b)
+// }
+// function sum(a,b){
+//     console.log(a+b);
+// }
+// function sub(a,b){
+//     console.log(a-b);
+// }
+// function mul(a,b){
+//     console.log(a*b);
+// }
+// function div(a,b){
+//     console.log(a/b);
+// }
+// calculate(15,5,sum);
+// calculate(15,5,sub);
+// calculate(15,5,mul);
+// calculate(15,5,div);
 
 
 
+// console.log("Fetching Data");
+// function fetchData(process){
+//     setTimeout(()=>{
+//         console.log("2....Data fetch ho chuka hai");
+//         processData();
+//     },2000)
+// }
+// function processData(){
+//     console.log("Data Process ho Chuka hai.......");
+// }
+
+// fetchData(process);
+// // console.log("4.  Some Other Task....");
 
 
+// function fetchData(data,callback){
+//     setTimeout(()=>{
+//         console.log(data);
+//         if(callback){
+//             callback();
+//         }
+//     },2000)
+// }
+// console.log("Fetching First Data.....");
+
+// fetchData("Data....1",()=>{
+//     fetchData("Data....2",()=>{
+//         fetchData("Data....3",()=>{
+//             fetchData("Data......4")
+//         })
+//     })
+// })
 
 
+// let p1=new Promise((res,rej)=>{
+//     rej("Data fetch Successfully.....")
+// })
+// console.log(p1);
+let pro=new Promise(function(res,rej){
+    setTimeout(()=>{
+        rej("Delivered Successfully.......");
+    },2000)
+})
+console.log(pro);
+pro.then((r)=>console.log(r).catch((err)=>console.log(err)))
+// console.log(pro);
